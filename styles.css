@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e5ec;
+    color: #333;
+}
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+}
+
+.logo-left, .logo-right {
+    height: 50px; 
+}
+
+header {
+    background-color: #ffffff;
+    color: #333;
+    padding: 1em;
+    text-align: center;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+}
+
+main {
+    padding: 2em;
+}
+
+/* Card Styles */
+.card {
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+/* Registro Buttons */
+.registro-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registro-buttons button {
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    box-shadow: 2px 2px 5px #b3b3b3, -2px -2px 5px #ffffff;
+    cursor: pointer;
+    font-size: 0.9em;
+    width: 45%; /* Ajusta el ancho para que ambos botones quepan en una fila */
+}
+
+.registro-buttons .entrada {
+    background-color: #d4e157; /* Light green */
+}
+
+.registro-buttons .salida {
+    background-color: #ff5252; /* Light red */
+}
+
+.registro-buttons button:hover {
+    background: #f0f0f0;
+}
+
+/* Section Styles */
+#alumnosSection, #registroSection {
+    margin-bottom: 2em;
+}
+
+#alumnosList {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1em;
+}
+
+#alumnosList li {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b3b3b3, -2px -2px 5px #ffffff;
+    display: flex;
+    align-items: center;
+}
+
+/* Registro Columns */
+#registrosSection {
+    display: flex;
+    justify-content: space-between;
+}
+
+.registro-column {
+    flex: 1;
+    margin: 0 1em;
+    background: #e0e5ec;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+    padding: 1em;
+    position: relative; /* Needed for button positioning */
+}
+
+.registro-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.registro-column li {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #b3b3b3, -2px -2px 5px #ffffff;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Footer Styles */
+footer {
+    background: #ffffff;
+    color: #333;
+    padding: 0.5em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 5px 5px 15px #b3b3b3, -5px -5px 15px #ffffff;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Download Buttons */
+.download-button {
+    background: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5em 1em;
+    box-shadow: 2px 2px 5px #b3b3b3, -2px -2px 5px #ffffff;
+    cursor: pointer;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+}
+
+.download-button:hover {
+    background: #f0f0f0;
+}
